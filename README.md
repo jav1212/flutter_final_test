@@ -153,4 +153,4 @@ flutter_final_test/  <br />
     - 3. Utiliza los botones de "Anterior" y "Siguiente" para navegar entre las páginas de películas.
 
 ## Arquitectura Hexagonal
-![README][documents/hexadiagram.png]
+![Diagrama Hexagonal](documents/hexadiagram.png)
