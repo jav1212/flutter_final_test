@@ -49,104 +49,102 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
   - bloc: ^8.1.2
 
 ## Estructura del Proyecto
-La estructura del proyecto es la siguiente:
-
-flutter_final_test/
-│
-├── lib/
-│   ├── application/
-│   │   ├── BLoC/
-│   │   │   ├── connectivity/
-│   │   │   │   ├── connectivity_bloc.dart
-│   │   │   │   ├── connectivity_event.dart
-│   │   │   │   └── connectivity_state.dart
-│   │   │   ├── credit/
-│   │   │   │   ├── credit_bloc.dart
-│   │   │   │   ├── credit_event.dart
-│   │   │   │   └── credit_state.dart
-│   │   │   └── trending/
-│   │   │       ├── trending_bloc.dart
-│   │   │       ├── trending_event.dart
-│   │   │       └── trending_state.dart
-│   │   └── use_cases/
-│   │       ├── credit/
-│   │       │   └── get_credit_by_movie.dart
-│   │       └── trending/
-│   │           └── get_trendings.dart
-│   ├── commons/
-│   │   ├── failure.dart
-│   │   ├── result.dart
-│   │   └── use_case.dart
-│   ├── domain/
-│   │   ├── actor/
-│   │   │   └── actor.dart
-│   │   ├── movie/
-│   │   │   └── movie.dart
-│   │   ├── credit/
-│   │   │   ├── credit/
-│   │   │   │   └── credit_repository.dart
-│   │   │   └── credit.dart
-│   │   └── trending/
-│   │       ├── repository/
-│   │       │   └── trending_repository.dart
-│   │       └── trending.dart
-│   ├── infrastucture/
-│   │   ├── datasources/
-│   │   │   └── api/
-│   │   │       ├── api_connection_manager_impl.dart
-│   │   │       └── api_connection_manager.dart
-│   │   ├── mappers/
-│   │   │   ├── actor/
-│   │   │   │   └── actor_mapper.dart
-│   │   │   ├── credit/
-│   │   │   │   └── credit_mapper.dart
-│   │   │   ├── movie/
-│   │   │   │   └── movie_mapper.dart
-│   │   │   └── trending/
-│   │   │       └── trending_mapper.dart
-│   │   ├── presentation/
-│   │   │   ├── config/
-│   │   │   │   ├── router/
-│   │   │   │   │   └── app_router.dart
-│   │   │   │   └── theme/
-│   │   │   │       └── app_theme.dart
-│   │   │   ├── pages/
-│   │   │   │   ├── detail/
-│   │   │   │   │   ├── detail_page.dart
-│   │   │   │   │   └── widgets/
-│   │   │   │   │       ├── actor_card.dart
-│   │   │   │   │       └── actor_grid.dart
-│   │   │   │   ├── home/
-│   │   │   │   │   ├── home_page.dart
-│   │   │   │   │   └── widgets/
-│   │   │   │   │       ├── movie_card.dart
-│   │   │   │   │       ├── movie_grid.dart
-│   │   │   │   │       └── movie_list.dart
-│   │   │   │   └── landing/
-│   │   │   │       └── landing_page.dart
-│   │   │   └── widgets/
-│   │   │       ├── bloc_listener/
-│   │   │       │    └── network_listener.dart
-│   │   │       └── shared/
-│   │   │            ├── circular_progress_indicator.dart
-│   │   │            ├── custom_app_bar.dart
-│   │   │            ├── error_page.dart
-│   │   │            ├── ipage.dart
-│   │   │            └── loading_page.dart
-│   │   ├── repositories/
-│   │   │   ├── credit/
-│   │   │   │   └── credit_repository_impl.dart
-│   │   │   └── trending/
-│   │   │       └── trending_repository_impl.dart
-│   │   └── services/
-│   │       ├── config/
-│   │       │   └── setup_injections.dart
-│   │       └── network/
-│   │           └── network_manager_impl.dart
-│   └── main.dart
-├── pubspec.yaml
-├── README.md
-└── .env
+ - flutter_final_test/
+    │
+    ├── lib/
+    │   ├── application/
+    │   │   ├── BLoC/
+    │   │   │   ├── connectivity/
+    │   │   │   │   ├── connectivity_bloc.dart
+    │   │   │   │   ├── connectivity_event.dart
+    │   │   │   │   └── connectivity_state.dart
+    │   │   │   ├── credit/
+    │   │   │   │   ├── credit_bloc.dart
+    │   │   │   │   ├── credit_event.dart
+    │   │   │   │   └── credit_state.dart
+    │   │   │   └── trending/
+    │   │   │       ├── trending_bloc.dart
+    │   │   │       ├── trending_event.dart
+    │   │   │       └── trending_state.dart
+    │   │   └── use_cases/
+    │   │       ├── credit/
+    │   │       │   └── get_credit_by_movie.dart
+    │   │       └── trending/
+    │   │           └── get_trendings.dart
+    │   ├── commons/
+    │   │   ├── failure.dart
+    │   │   ├── result.dart
+    │   │   └── use_case.dart   
+    │   ├── domain/
+    │   │   ├── actor/
+    │   │   │   └── actor.dart
+    │   │   ├── movie/
+    │   │   │   └── movie.dart
+    │   │   ├── credit/
+    │   │   │   ├── credit/
+    │   │   │   │   └── credit_repository.dart
+    │   │   │   └── credit.dart
+    │   │   └── trending/
+    │   │       ├── repository/
+    │   │       │   └── trending_repository.dart
+    │   │       └── trending.dart
+    │   ├── infrastucture/
+    │   │   ├── datasources/
+    │   │   │   └── api/
+    │   │   │       ├── api_connection_manager_impl.dart
+    │   │   │       └── api_connection_manager.dart
+    │   │   ├── mappers/
+    │   │   │   ├── actor/
+    │   │   │   │   └── actor_mapper.dart
+    │   │   │   ├── credit/
+    │   │   │   │   └── credit_mapper.dart
+    │   │   │   ├── movie/
+    │   │   │   │   └── movie_mapper.dart
+    │   │   │   └── trending/
+    │   │   │       └── trending_mapper.dart
+    │   │   ├── presentation/
+    │   │   │   ├── config/
+    │   │   │   │   ├── router/
+    │   │   │   │   │   └── app_router.dart
+    │   │   │   │   └── theme/
+    │   │   │   │       └── app_theme.dart
+    │   │   │   ├── pages/
+    │   │   │   │   ├── detail/
+    │   │   │   │   │   ├── detail_page.dart
+    │   │   │   │   │   └── widgets/
+    │   │   │   │   │       ├── actor_card.dart
+    │   │   │   │   │       └── actor_grid.dart
+    │   │   │   │   ├── home/
+    │   │   │   │   │   ├── home_page.dart
+    │   │   │   │   │   └── widgets/
+    │   │   │   │   │       ├── movie_card.dart
+    │   │   │   │   │       ├── movie_grid.dart
+    │   │   │   │   │       └── movie_list.dart
+    │   │   │   │   └── landing/
+    │   │   │   │       └── landing_page.dart
+    │   │   │   └── widgets/
+    │   │   │       ├── bloc_listener/
+    │   │   │       │    └── network_listener.dart
+    │   │   │       └── shared/
+    │   │   │            ├── circular_progress_indicator.dart
+    │   │   │            ├── custom_app_bar.dart
+    │   │   │            ├── error_page.dart
+    │   │   │            ├── ipage.dart
+    │   │   │            └── loading_page.dart
+    │   │   ├── repositories/
+    │   │   │   ├── credit/
+    │   │   │   │   └── credit_repository_impl.dart
+    │   │   │   └── trending/
+    │   │   │       └── trending_repository_impl.dart
+    │   │   └── services/
+    │   │       ├── config/
+    │   │       │   └── setup_injections.dart
+    │   │       └── network/
+    │   │           └── network_manager_impl.dart
+    │   └── main.dart
+    ├── pubspec.yaml
+    ├── README.md
+    └── .env
 
 ## Uso 
     - 1. En la pantalla principal, verás una lista de películas populares. 
