@@ -49,7 +49,8 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
   - bloc: ^8.1.2
 
 ## Estructura del Proyecto
- - flutter_final_test/  <br />
+$ tree
+flutter_final_test/  <br />
     │ <br />
     ├── lib/ <br />
     │   ├── application/ <br />
